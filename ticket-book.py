@@ -1,7 +1,7 @@
 MAX_SEATS = 50
 MAX_NAME_LENGTH = 50
 
-# Class to store booking details
+
 class Booking:
     def __init__(self):
         self.name = ""
@@ -11,23 +11,23 @@ class Booking:
         self.seat_number = 0
         self.is_booked = False
 
-train = [Booking() for _ in range(MAX_SEATS)]  # List to store booking details
+train = [Booking() for _ in range(MAX_SEATS)]  
 
-# Initialize the train seats as available
+
 def initializeSeats():
     for i in range(MAX_SEATS):
-        train[i].is_booked = False  # False represents available seat
+        train[i].is_booked = False  
 
-# Function to display available seats
+
 def displayAvailableSeats():
     print("Available seats:")
     for i in range(MAX_SEATS):
         if not train[i].is_booked:
             print(f"Seat {i + 1}")
 
-# Function to book a seat
+
 def bookSeat():
-    seat_number = int(input("Enter seat number to book: ")) - 1  # Adjust index
+    seat_number = int(input("Enter seat number to book: ")) - 1  
 
     if seat_number < 0 or seat_number >= MAX_SEATS:
         print("Invalid seat number")
@@ -37,16 +37,16 @@ def bookSeat():
         print("Seat already booked")
     else:
         train[seat_number].is_booked = True
-        train[seat_number].seat_number = seat_number + 1  # Actual seat number
+        train[seat_number].seat_number = seat_number + 1 
         train[seat_number].name = input("Enter passenger name: ")
         train[seat_number].age = int(input("Enter passenger age: "))
         train[seat_number].source = input("Enter source: ")
         train[seat_number].destination = input("Enter destination: ")
         print("Seat booked successfully!")
 
-# Function to cancel a seat booking
+
 def cancelSeat():
-    seat_number = int(input("Enter seat number to cancel booking: ")) - 1  # Adjust index
+    seat_number = int(input("Enter seat number to cancel booking: ")) - 1  
 
     if seat_number < 0 or seat_number >= MAX_SEATS:
         print("Invalid seat number")
@@ -58,9 +58,9 @@ def cancelSeat():
     else:
         print("Seat is not booked")
 
-# Function to print ticket details
+
 def printTicket(seat_number):
-    seat_number -= 1  # Adjust index
+    seat_number -= 1  
 
     if seat_number < 0 or seat_number >= MAX_SEATS:
         print("Invalid seat number")
