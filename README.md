@@ -15,7 +15,7 @@ Converts temperature from Celsius to Fahrenheit using the standard conversion fo
 Calculates the factorial of a given number using Python logic and loops.
 
 ### 3. Greatest of Three Numbers
-**File:** `greatest of 3 num.py`
+**File:** `greatest_of_3_num.py`
 
 Finds the largest number among three user-provided numbers.
 
@@ -30,12 +30,12 @@ A simple interactive game where the user attempts to guess the correct number.
 Checks whether a given year is a leap year according to calendar rules.
 
 ### 6. Basic Python Practice - Lines 1
-**File:** `lines_1.py`
+**File:** `pattern_1.py`
 
 Contains introductory Python practice exercises.
 
 ### 7. Basic Python Practice - Lines 2
-**File:** `lines_2.py`
+**File:** `pattern_2.py`
 
 Additional beginner Python exercises and examples.
 
@@ -50,7 +50,7 @@ Generates the multiplication table for a number entered by the user.
 Solves quadratic equations and finds their roots.
 
 ### 10. Sum of N Numbers
-**File:** `sum of n num.py`
+**File:** `sum_of_n_num.py`
 
 Calculates the sum of the first N natural numbers.
 
